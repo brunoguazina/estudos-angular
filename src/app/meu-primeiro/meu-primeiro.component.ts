@@ -4,7 +4,7 @@ import { Component } from "@angular/core";
 @Component({
     selector: 'meu-primeiro-component',
     template: `
-        <p> meu primeiro component com Angular </p>
+        <p> Meu primeiro component com Angular </p>
     `
 })
 
