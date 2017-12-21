@@ -10,16 +10,21 @@ import { Component, OnInit } from '@angular/core';
 
 export class CursosComponent {
 
-  nomePortal: string;
 
   cursos: string [];
   
+
   constructor(private cursosService: CursosService) {
 
-    this.nomePortal = 'Bruno Guazina';
-  
-    this.cursos = this.cursosService.getCursos();
+    
+    this.listarCursos();
 
   }
 
+
+  private listarCursos() {
+    this.cursos = this.cursosService.getCursos();
+  }
+
+  
 }
