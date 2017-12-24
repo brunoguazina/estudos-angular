@@ -6,7 +6,7 @@ export class CursosService {
   constructor() { }
 
   getCursos () {
-    return ['Angular', 'HTML', 'CSS', 'JavaScript'];
+    return ['Angular', 'HTML', 'CSS', 'JavaScript', 'jQuery', 'VueJS', 'TypeScript'];
   }
 
 }

@@ -8,23 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cursos.component.css']
 })
 
-export class CursosComponent {
 
+export class CursosComponent {
 
   cursos: string [];
   
 
   constructor(private cursosService: CursosService) {
 
-    
-    this.listarCursos();
+      this.cursos = this.cursosService.getCursos();
 
   }
-
-
-  private listarCursos() {
-    this.cursos = this.cursosService.getCursos();
-  }
-
   
 }
