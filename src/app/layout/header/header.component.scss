@@ -1,4 +1,8 @@
-header{
-    padding: 25px 25px;    
-    background-color: #f2f2f2;
+
+$primary-color: #f2f2f2;
+
+header {
+    padding: 25px 25px;
+    background-color: $primary-color; 
 }
+    

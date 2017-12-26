@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-cursos',
   templateUrl: './cursos.component.html',
-  styleUrls: ['./cursos.component.css']
+  styleUrls: ['./cursos.component.scss']
 })
 
 
@@ -13,7 +13,8 @@ export class CursosComponent {
 
   cursos: string [];
   valorAtual = '';
-
+  nomeDoCurso: string;
+  
   onKeyUp(evento: KeyboardEvent){
     console.log();
     this.valorAtual = (<HTMLInputElement>evento.target).value;
@@ -21,9 +22,6 @@ export class CursosComponent {
 
   constructor(private cursosService: CursosService) {
 
-      this.cursos = this.cursosService.getCursos();
-      
-  }
-  
-  
+      this.cursos = this.cursosService.getCursos();      
+  }  
 }

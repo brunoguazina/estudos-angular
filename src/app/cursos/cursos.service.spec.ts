@@ -9,7 +9,5 @@ describe('CursosService', () => {
     });
   });
 
-  it('should be created', inject([CursosService], (service: CursosService) => {
-    expect(service).toBeTruthy();
-  }));
+  
 });

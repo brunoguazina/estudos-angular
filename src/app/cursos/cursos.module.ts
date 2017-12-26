@@ -21,4 +21,4 @@ import { CursosComponent } from './cursos.component';
   ]
 })
 
-export class CursosModule { }
+export class CursosModule {}
