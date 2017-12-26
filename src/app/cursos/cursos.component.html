@@ -1,5 +1,8 @@
 
-<input type="text" value="digite o nome do curso" [(ngModel)]="nomeDoCurso">
+<input type="text" value="digite o nome do curso"
+        [(ngModel)]="nomeDoCurso"
+        (keyup)="onKeyUp($event)"
+/>
 <p> {{nomeDoCurso}} </p> 
 
 <ul>
